@@ -1,0 +1,45 @@
+[
+    {
+        "name": "开始",
+        "path": "/intro"
+    },
+    {
+        "name": "使用指南",
+        "children": [
+            {
+                "path": "/v-validator",
+                "name": "指令结构"
+
+            },
+            {
+                "path": "/default-rules",
+                "name": "内置规则"
+            },
+            {
+                "path": "/options",
+                "name": "配置选项"
+            },
+            {
+                "path": "/custom-rules",
+                "name": "自定义规则"
+            },
+            {
+                "path": "/group-validate",
+                "name": "分组校验"
+            }
+        ]
+    },
+    {
+        "name": "案例",
+        "children": [
+            {
+                "path": "/custom-component",
+                "name": "自定义组件"
+            },
+            {
+                "path": "/dynamic-fields",
+                "name": "动态字段"
+            }
+        ]
+    }
+]

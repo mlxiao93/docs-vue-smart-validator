@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/maolinx/.nvm/versions/node/v8.1.2/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/maolinx/.nvm/versions/node/v8.1.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.21.3
+
+Node version: 
+  8.1.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "docs",
+    "version": "1.0.0",
+    "description": "一个组件库呀",
+    "main": "index.js",
+    "scripts": {
+      "start": "cooking watch -c  node_modules/@hfe/gear-template/cooking.conf.js "
+    },
+    "author": {
+      "name": "xiaomaolin",
+      "email": "xiaomaolin@meituan.com"
+    },
+    "license": "ISC",
+    "devDependencies": {
+      "@hfe/gear-template": "^0.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.npmjs.org/@hfe%2fgear-template: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/0.21.3/libexec/lib/node_modules/yarn/lib/util/request-manager.js:313:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/0.21.3/libexec/lib/node_modules/yarn/node_modules/request/request.js:186:22)
+      at emitTwo (events.js:125:13)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/0.21.3/libexec/lib/node_modules/yarn/node_modules/request/request.js:1081:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/0.21.3/libexec/lib/node_modules/yarn/node_modules/request/request.js:1001:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)
