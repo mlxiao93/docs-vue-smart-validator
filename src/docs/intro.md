@@ -1,5 +1,9 @@
 基于vue的表单校验指令
 
+:::tip
+[github](https://github.com/mlxiao93/vue-smart-validator)
+:::
+
 ### 安装
 
 ```shell
