@@ -158,10 +158,7 @@
          
          <label>负数：</label>
          <input v-model="models[12]" v-validator="[{rule: 'number', negative: true, message: '必须输入负数'}]">
-         <span>{{$validator.firstError('models[12]')}}</span>
-                 
-         <br><br><br>       
-        
+         <span>{{$validator.firstError('models[12]')}}</span>      
     </div>
 </template>
 ```
@@ -176,13 +173,13 @@
 <template>
     <div>
         <label>用户名：</label>
-        <input v-model="models[13]">        
-        <br>
-        <br>
-        <label>确认用户名：</label>
-                <input v-model="models[14]" v-validator="[{rule: 'equal', val: models[13], message: '必须与用户名一致', trigger: 'change'}]">
-                <span>{{$validator.firstError('models[14]')}}</span>
+        <input v-model="models[13]">   
+             
+        <br><br>
         
+        <label>确认用户名：</label>
+        <input v-model="models[14]" v-validator="[{rule: 'equal', val: models[13], message: '必须与用户名一致', trigger: 'change'}]">
+        <span>{{$validator.firstError('models[14]')}}</span>  
     </div>
 </template>
 ```
@@ -197,12 +194,12 @@
     <div>
         <label>用户名：</label>
         <input v-model="models[15]">
-        <br>
-        <br>
+        
+        <br><br>
+        
         <label>新用户名：</label>
         <input v-model="models[16]" v-validator="[{rule: 'notEqual', val: models[15], message: '不能与用户名一致', trigger: 'change'}]">
         <span>{{$validator.firstError('models[16]')}}</span>
-        
     </div>
 </template>
 ```

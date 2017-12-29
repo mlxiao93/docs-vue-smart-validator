@@ -80,4 +80,34 @@ interface $validator {
     firstError: {(index?: string | { group: string }): Object | undefined}
 }
 ```
-TODO: 详细描述每个方法
+
+example:
+```html
+<template>
+    <label>a组</label><input v-model="models[1]" v-validator.group@a="[{rule: 'required'}]">
+    <label>a组</label><input v-model="models[2]" v-validator.group@a="[{rule: 'required'}]">
+    <label>b组</label><input v-model="models[3]" v-validator.group@b="[{rule: 'required'}]">
+    <label>b组</label><input v-model="models[4]" v-validator.group@b="[{rule: 'required'}]">
+    
+    <label>指定key</label><input v-model="models[4]" v-validator.key@m="[{rule: 'required'}]">
+    
+    <button @click="submit">submit</button>
+</template>
+<script>
+export default {
+    data() {
+        return {
+            models: []
+        }
+    },
+    methods: {
+       submit() {
+           $validator.check().getError();    // 触发所有字段的校验并获取错误信息
+           $validator.check({group: 'a'}).getError({group: 'a'});   // 触发组'a'字段的校验并获取错误信息
+
+           $validator.check('m').getError('m');   // 触发组key为'm'字段的校验并获取错误信息, 这里的'm'代替了'models[4]'作为key
+       }
+    }
+}
+</script>
+```

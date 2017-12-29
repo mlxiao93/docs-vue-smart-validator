@@ -25,20 +25,11 @@
             },
             {
                 "path": "/group-validate",
-                "name": "分组校验"
-            }
-        ]
-    },
-    {
-        "name": "案例",
-        "children": [
+                "name": "校验分组"
+            },
             {
                 "path": "/custom-component",
                 "name": "自定义组件"
-            },
-            {
-                "path": "/dynamic-fields",
-                "name": "动态字段"
             }
         ]
     }

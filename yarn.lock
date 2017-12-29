@@ -7230,9 +7230,9 @@ vue-router@2.7.0:
   version "2.7.0"
   resolved "http://r.npm.sankuai.com/vue-router/download/vue-router-2.7.0.tgz#16d424493aa51c3c8cce8b7c7210ea4c3a89aff1"
 
-vue-smart-validator@0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/vue-smart-validator/-/vue-smart-validator-0.6.2.tgz#f72d88505a476edb20680de08dcf7d7b57a04c1d"
+vue-smart-validator@0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/vue-smart-validator/-/vue-smart-validator-0.6.4.tgz#2a3cfdf490058cb12392c1f994ad1dfabbc62680"
   dependencies:
     uuid "^3.1.0"
 
